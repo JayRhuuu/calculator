@@ -1,0 +1,53 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 500px;
+    height: 550px;
+    border: solid 1px black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.input-border {
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+}
+#enter {
+    width: 310px;
+    height: 45px;
+    font-size: 2rem;
+    border: none;
+    opacity: 0.7;
+}
+#enter:focus {
+    outline: none;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 75px;
+    height: 75px;
+    font-size: 2rem;
+    margin: 3px;
+    border-radius: 5px;
+}
+.row1, .row2, .row3, .row4, .row5 {
+    display: flex;
+}
