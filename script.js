@@ -28,12 +28,16 @@ function clearAll() {
 function displayResult() {
   document.getElementById("equal").addEventListener("click", function () {
     try {
-      document.getElementById("display").value = eval(
+      const result = (document.getElementById("display").value = eval(
         document.getElementById("display").value
-      );
+      ));
+
+      document.getElementById("display").value = Number(result)
+        .toFixed(3)
+        .replace(/\.?0+$/, "");
+
       console.log(document.getElementById("display").value);
-    }
-    catch (error) {
+    } catch (error) {
       document.getElementById("display").value = "Invalid Syntax";
     }
   });
