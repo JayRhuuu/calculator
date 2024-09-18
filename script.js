@@ -30,14 +30,22 @@ function displayResult() {
     try {
       document.getElementById("display").value = eval(
         document.getElementById("display").value
-      ).toString();
-
-      if (0 == document.getElementById("display").value){
-        document.getElementById("display").value = "";
-      }
-    } catch (error) {
+      );
+      console.log(document.getElementById("display").value);
+    }
+    catch (error) {
       document.getElementById("display").value = "Invalid Syntax";
     }
+  });
+}
+
+function displayPercentage() {
+  document.getElementById("percentage").addEventListener("click", function () {
+    let percentage = document.getElementById("display").value / 100;
+
+    document.getElementById("display").value = percentage;
+
+    console.log(percentage);
   });
 }
 
@@ -69,6 +77,7 @@ function attachListeners() {
   }
 }
 
+displayPercentage();
 displayResult();
 clearAll();
 clearOnce();
