@@ -53,6 +53,27 @@ function displayPercentage() {
   });
 }
 
+function multiply() {
+  document.getElementById("multiply").addEventListener("click", function () {
+    document.getElementById("display").value += "*";
+
+    console.log(document.getElementById("display").value);
+  })
+}
+
+function addDot() {
+  document.getElementById("dot").addEventListener("click", function () {
+    if (!document.getElementById("display").value.includes(".")) {
+      if (document.getElementById("display").value === "") {
+        document.getElementById("display").value = "0.";
+      } else {
+        document.getElementById("display").value += ".";
+      }
+    }
+    console.log(document.getElementById("display").value);
+  })
+}
+
 function attachListeners() {
   const classes = [
     "one",
@@ -66,9 +87,7 @@ function attachListeners() {
     "nine",
     "zero",
     "doubleZero",
-    "dot",
     "divide",
-    "times",
     "minus",
     "plus",
   ];
@@ -81,6 +100,8 @@ function attachListeners() {
   }
 }
 
+addDot()
+multiply()
 displayPercentage();
 displayResult();
 clearAll();
