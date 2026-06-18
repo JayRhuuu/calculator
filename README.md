@@ -60,9 +60,7 @@ calculator/
 
 ## Screenshots
 
-![Calculator Screenshot 1](https://via.placeholder.com/800x450.png?text=Calculator+Screenshot+1)
-
-![Calculator Screenshot 2](https://via.placeholder.com/800x450.png?text=Responsive+Mobile+View)
+![Calculator Screenshot](images/calculator-screenshot.png)
 
 ## Future Enhancements
 
