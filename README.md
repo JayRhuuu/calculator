@@ -2,6 +2,10 @@
 
 A lightweight static calculator app built with plain HTML, CSS, and JavaScript.
 
+## Live demo
+
+- https://jayrhuuu.github.io/calculator/
+
 ## Project overview
 
 - Responsive calculator UI with modern styling
@@ -9,6 +13,7 @@ A lightweight static calculator app built with plain HTML, CSS, and JavaScript.
 - Clean button handling using event delegation
 - Expression validation and result formatting
 - Vite-compatible app structure for local development
+- Relative asset paths for GitHub Pages deployment
 
 ## Files
 
@@ -16,6 +21,7 @@ A lightweight static calculator app built with plain HTML, CSS, and JavaScript.
 - `style.css` — layout and visual styling
 - `script.js` — calculator behavior and input handling
 - `package.json` — Node.js dev dependency and `npm run dev` script
+- `favicon.ico` — browser tab icon
 
 ## Run locally
 
@@ -33,7 +39,7 @@ npm run dev
 
 3. Open the local URL shown by Vite (usually `http://localhost:5173`).
 
-> If you prefer a quick preview, you can also open `index.html` directly in a browser, but the Vite server is recommended for local development.
+> If you want a quick preview only, you can open `index.html` directly in a browser. For development, use the Vite server.
 
 ## How to use
 
@@ -48,13 +54,15 @@ npm run dev
 - Prevents duplicate operators
 - Prevents multiple decimals in the same operand
 - Smart handling for leading zeros and `00`
+- Supports percentage `%`
 - Lightweight and easy to extend
 
-## Notes
+## Development notes
 
-- Update `script.js` if you want to change calculator behavior.
-- Update `style.css` to tweak the look and feel.
+- `index.html` uses relative paths so the app works on GitHub Pages at `/calculator/`.
+- `package.json` is configured for local development with `npm run dev`.
+- `node_modules` is ignored by `.gitignore` and should not be committed.
 
 ---
 
-Built for local development with Vite.
+Built for local development with Vite and deployed on GitHub Pages.
