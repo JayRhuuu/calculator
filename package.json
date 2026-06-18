@@ -2,6 +2,9 @@
   "name": "calculator",
   "version": "1.0.0",
   "private": true,
+  "description": "A lightweight static calculator app built with HTML, CSS, and JavaScript.",
+  "homepage": "https://jayrhuuu.github.io/calculator/",
+  "license": "MIT",
   "scripts": {
     "dev": "vite"
   },

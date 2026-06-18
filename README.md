@@ -1,68 +1,91 @@
 # Calculator
 
-A lightweight static calculator app built with plain HTML, CSS, and JavaScript.
+![GitHub Pages](https://img.shields.io/badge/Pages-live-blue)
+![Vite](https://img.shields.io/badge/Vite-5.4.1-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-## Live demo
+A polished responsive calculator app built with HTML, CSS, and JavaScript. The project runs locally with Vite and is deployed on GitHub Pages.
 
-- https://jayrhuuu.github.io/calculator/
+## Demo
 
-## Project overview
+- Live demo: https://jayrhuuu.github.io/calculator/
 
-- Responsive calculator UI with modern styling
-- Keyboard support for digits, operators, Enter, Backspace, Escape, and `%`
-- Clean button handling using event delegation
-- Expression validation and result formatting
-- Vite-compatible app structure for local development
-- Relative asset paths for GitHub Pages deployment
+## Features
 
-## Files
+- Responsive calculator layout for desktop and mobile devices
+- Keyboard input support for numbers and operators
+- Percentage calculation and clear/backspace handling
+- Smart operator and decimal validation
+- Clean event delegation for button clicks
+- GitHub Pages friendly relative asset paths
 
-- `index.html` — main application markup
-- `style.css` — layout and visual styling
-- `script.js` — calculator behavior and input handling
-- `package.json` — Node.js dev dependency and `npm run dev` script
-- `favicon.ico` — browser tab icon
+## Technologies Used
 
-## Run locally
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Vite (development server)
+- GitHub Pages
 
-1. Install dependencies:
+## Installation
 
 ```powershell
 npm install
 ```
 
-2. Start the development server:
+## Usage
+
+Start the local development server:
 
 ```powershell
 npm run dev
 ```
 
-3. Open the local URL shown by Vite (usually `http://localhost:5173`).
+Then open the URL shown by Vite, usually `http://localhost:5173`.
 
-> If you want a quick preview only, you can open `index.html` directly in a browser. For development, use the Vite server.
+For a quick preview, open `index.html` directly in your browser.
 
-## How to use
+## Project Structure
 
-- Click calculator buttons or type on the keyboard.
-- Valid operators: `+`, `-`, `*`, `/`.
-- Press `Enter` to calculate.
-- Press `Backspace` to delete the last character.
-- Press `Esc` to clear the input.
+```text
+calculator/
+├── index.html
+├── style.css
+├── script.js
+├── favicon.ico
+├── package.json
+├── .gitignore
+└── README.md
+```
 
-## Features
+## Screenshots
 
-- Prevents duplicate operators
-- Prevents multiple decimals in the same operand
-- Smart handling for leading zeros and `00`
-- Supports percentage `%`
-- Lightweight and easy to extend
+![Calculator Screenshot 1](https://via.placeholder.com/800x450.png?text=Calculator+Screenshot+1)
 
-## Development notes
+![Calculator Screenshot 2](https://via.placeholder.com/800x450.png?text=Responsive+Mobile+View)
 
-- `index.html` uses relative paths so the app works on GitHub Pages at `/calculator/`.
-- `package.json` is configured for local development with `npm run dev`.
-- `node_modules` is ignored by `.gitignore` and should not be committed.
+## Future Enhancements
 
----
+- Add history logging for previous calculations
+- Add theme switching (light/dark mode)
+- Support advanced operations like square root and exponentiation
+- Add touch feedback animations and sound effects
+- Add unit tests and GitHub Actions for continuous integration
 
-Built for local development with Vite and deployed on GitHub Pages.
+## Author
+
+JayRhuuu
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contribution
+
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m "Add some feature"`
+4. Push to the branch: `git push origin feature-name`
+5. Open a pull request.
+
+Please keep changes small and focused, and include a clear description of your work.
